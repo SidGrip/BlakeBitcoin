@@ -27,7 +27,7 @@ BlakeBitcoin was inspired and requested by the Blake community. It is a Blake-25
 ## Quick Start (Ubuntu 18.04)
 
 ```bash
-git clone https://github.com/SidGrip/BlakeBitcoin.git
+git clone https://github.com/BlakeBitcoin/BlakeBitcoin.git
 cd BlakeBitcoin
 sudo add-apt-repository ppa:bitcoin/bitcoin
 sudo apt update
@@ -70,7 +70,7 @@ Other options:
 ## Platform Build Instructions
 
 ```bash
-git clone https://github.com/SidGrip/BlakeBitcoin.git
+git clone https://github.com/BlakeBitcoin/BlakeBitcoin.git
 cd BlakeBitcoin
 ```
 
