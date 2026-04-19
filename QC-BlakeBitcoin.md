@@ -1,7 +1,7 @@
 # QC Report — BlakeBitcoin 0.15.2 Update
 
 Date: 2026-04-11
-Scope: fresh verification of source-of-truth `BlakeBitcoin-0.15.2-update.md` against the code in `src/`, cross-referenced against the original 0.8.x tree in `../BlakeBitcoin/src/`.
+Scope: fresh verification of source-of-truth `BlakeBitcoin-0.15.21.md` against the code in `src/`, cross-referenced against the original 0.8.x tree in `../BlakeBitcoin/src/`.
 
 ---
 
@@ -152,7 +152,7 @@ RPC direction policy: **PASS**. Matches the Merged-Mining RPC Direction section 
 
 ## Action Items
 
-1. **SoT identity-table drift (DNS seeds)** — Update the `## DNS Seeds` line in `BlakeBitcoin-0.15.2-update.md` from `blakecrypto.com (single seed; still needs review once AuxPow lands)` to the shipping pair `seed.blakestream.io`, `seed.blakecoin.org`, to match both the code and the `BlakeStream Seed And AuxPoW RPC Policy` section.
+1. **SoT identity-table drift (DNS seeds)** — Update the `## DNS Seeds` line in `BlakeBitcoin-0.15.21.md` from `blakecrypto.com (single seed; still needs review once AuxPow lands)` to the shipping pair `seed.blakestream.io`, `seed.blakecoin.org`, to match both the code and the `BlakeStream Seed And AuxPoW RPC Policy` section.
 
 2. **SoT identity-table drift (ticker)** — The Coin Identity table says `Ticker: BLC`, but `CURRENCY_UNIT = "BBTC"` in `src/policy/feerate.cpp`. Update the table to `BBTC` (or document explicitly why the display ticker diverges from `CURRENCY_UNIT`). The `Max Supply` and `Initial Block Reward` cells in the Block Parameters table also read `BLC` — align those too.
 

@@ -2,9 +2,9 @@
 
 ## Overview
 
-Port BlakeBitcoin (BLC) from its current 0.8.9.8 codebase to Bitcoin Core 0.15.2, following the same approach used for the Blakecoin 0.15.2 update (`Blakecoin-0.15.2-update`).
+Port BlakeBitcoin (BLC) from its current 0.8.9.8 codebase to Bitcoin Core 0.15.2, following the same approach used for the Blakecoin 0.15.2 update (`Blakecoin-0.15.21`).
 
-**Reference codebase:** `../Blakecoin-0.15.2-update/` — the completed Blakecoin port to 0.15.2
+**Reference codebase:** `../Blakecoin-0.15.21/` — the completed Blakecoin port to 0.15.2
 **Original codebase:** `../BlakeBitcoin/` — current 0.8.9.8 source with all coin-specific parameters
 
 ---
@@ -157,7 +157,7 @@ Interpretation note:
 
 ### Phase 1: Copy & Rebrand the Blakecoin 0.15.2 Base
 
-1. **Copy** the entire `Blakecoin-0.15.2-update` codebase into this directory
+1. **Copy** the entire `Blakecoin-0.15.21` codebase into this directory
 2. **Rename** all Blakecoin references → BlakeBitcoin:
    - Binary names: `blakebitcoind`, `blakebitcoin-qt`, `blakebitcoin-cli`, `blakebitcoin-tx`
    - Config file: `blakebitcoin.conf`, config dir `~/.blakebitcoin/`
@@ -282,12 +282,12 @@ Interpretation note:
 
 | What | Where |
 |------|-------|
-| Reference (completed) | `../Blakecoin-0.15.2-update/` |
+| Reference (completed) | `../Blakecoin-0.15.21/` |
 | Original coin source | `../BlakeBitcoin/` |
 | Original chainparams | `../BlakeBitcoin/src/main.cpp` (0.8.x style) |
 | Original build script | `../BlakeBitcoin/build.sh` |
 | Blakecoin build notes | `../blakecoin-15.md` |
-| SegWit reference | `../Blakecoin-0.15.2-update/15-2-segwith.md` |
+| SegWit reference | `../Blakecoin-0.15.21/15-2-segwith.md` |
 
 ## SegWit Activation Test
 
