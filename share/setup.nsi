@@ -10,7 +10,7 @@ SetCompressor /SOLID lzma
 !define URL https://github.com/BlakeBitcoin/BlakeBitcoin
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/sid/Blakestream-Installer/repos/BlakeBitcoin-0.15.21/share/pixmaps/Blakecoin.ico"
+!define MUI_ICON "/home/sid/Blakestream-Installer/repos/BlakeBitcoin-0.15.21/share/pixmaps/bitcoin.ico"
 !define MUI_WELCOMEFINISHPAGE_BITMAP "/home/sid/Blakestream-Installer/repos/BlakeBitcoin-0.15.21/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
@@ -50,9 +50,9 @@ Var StartMenuGroup
 # Installer attributes
 OutFile /home/sid/Blakestream-Installer/repos/BlakeBitcoin-0.15.21/blakebitcoin-${VERSION}-win-setup.exe
 !if "" == "64"
-InstallDir $PROGRAMFILES64\Bitcoin
+InstallDir $PROGRAMFILES64\BlakeBitcoin
 !else
-InstallDir $PROGRAMFILES\Bitcoin
+InstallDir $PROGRAMFILES\BlakeBitcoin
 !endif
 CRCCheck on
 XPStyle on
@@ -104,7 +104,7 @@ Section -post SEC0001
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
     WriteRegStr HKCR "blakebitcoin" "URL Protocol" ""
-    WriteRegStr HKCR "blakebitcoin" "" "URL:Bitcoin"
+    WriteRegStr HKCR "blakebitcoin" "" "URL:BlakeBitcoin"
     WriteRegStr HKCR "blakebitcoin\DefaultIcon" "" $INSTDIR\blakebitcoin-qt
     WriteRegStr HKCR "blakebitcoin\shell\open\command" "" '"$INSTDIR\blakebitcoin-qt" "%1"'
 SectionEnd
@@ -137,7 +137,7 @@ Section -un.post UNSEC0001
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\BlakeBitcoin Core (testnet, -bit).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Bitcoin.lnk"
+    Delete /REBOOTOK "$SMSTARTUP\BlakeBitcoin.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log

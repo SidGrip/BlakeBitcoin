@@ -70,7 +70,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     QRect rGradient(QPoint(0,0), splashSize);
     pixPaint.fillRect(rGradient, gradient);
 
-    // draw the Blakecoin icon, expected size of PNG: 1024x1024
+    // draw the BlakeBitcoin icon, expected size of PNG: 1024x1024
     QRect rectIcon(QPoint(10,10), QSize(250,250));
 
     const QSize requiredSize(1024,1024);

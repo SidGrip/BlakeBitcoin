@@ -48,7 +48,7 @@ EXPECTED_COIN_LABELS = {
 
 EXPECTED_REGTEST_BECH32_PREFIXES = {
     "Blakecoin-0.15.21": "rblc1",
-    "BlakeBitcoin-0.15.21": "rblb1",
+    "BlakeBitcoin-0.15.21": "rbbtc1",
     "Electron-ELT-0.15.21": "relt1",
     "lithium-0.15.21": "rlit1",
     "Photon-0.15.21": "rpho1",

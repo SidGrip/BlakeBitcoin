@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
 
     if (parse_glibc_version(&glibc_major, &glibc_minor) == 0) {
         if (glibc_major < 2 || (glibc_major == 2 && glibc_minor < 34)) {
-            fprintf(stderr, "This Blakecoin AppImage bundle supports Ubuntu 22.04 and newer.\n");
+            fprintf(stderr, "This BlakeBitcoin AppImage bundle supports Ubuntu 22.04 and newer.\n");
             fprintf(stderr, "Use the Ubuntu 20 native release on older systems.\n");
             return 1;
         }
@@ -56,7 +56,7 @@ int main(int argc, char **argv) {
     }
     *slash = '\0';
 
-    if (snprintf(payload_path, sizeof(payload_path), "%s/.runtime/Blakecoin-0.15.21-x86_64.AppImage.payload", app_dir) >= (int)sizeof(payload_path)) {
+    if (snprintf(payload_path, sizeof(payload_path), "%s/.runtime/BlakeBitcoin-0.15.21-x86_64.AppImage.payload", app_dir) >= (int)sizeof(payload_path)) {
         fprintf(stderr, "Payload path is too long\n");
         return 1;
     }

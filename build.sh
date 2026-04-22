@@ -22,7 +22,7 @@
 #   sidgrip/mxe-base:latest        -  Windows cross-compile (MXE + MinGW)
 #   sidgrip/osxcross-base:sdk-26.2  -  macOS cross-compile (depends + osxcross SDK 26.2)
 #
-# Repository: https://github.com/BlueDragon747/BlakeBitcoin (branch: master)
+# Repository: https://github.com/BlakeBitcoin/BlakeBitcoin (branch: master)
 # =============================================================================
 
 set -euo pipefail
@@ -42,9 +42,9 @@ QT_LINUX_LAUNCHER_SOURCE="$SCRIPT_DIR/contrib/linux-release/blakecoin-qt-launche
 APPIMAGE_PUBLIC_NAME="${COIN_NAME_UPPER}-${VERSION}-x86_64.AppImage"
 WINDOWS_ICON_SOURCE_PNG="$SCRIPT_DIR/src/qt/res/icons/bitcoin.png"
 WINDOWS_ICON_SOURCE_TESTNET_PNG="$SCRIPT_DIR/src/qt/res/icons/bitcoin_testnet.png"
-WINDOWS_EXE_ICON_ICO="$SCRIPT_DIR/src/qt/res/icons/Blakecoin_32.ico"
-WINDOWS_EXE_ICON_TESTNET_ICO="$SCRIPT_DIR/src/qt/res/icons/Blakecoin_32_testnet.ico"
-WINDOWS_INSTALLER_ICON_ICO="$SCRIPT_DIR/share/pixmaps/Blakecoin.ico"
+WINDOWS_EXE_ICON_ICO="$SCRIPT_DIR/src/qt/res/icons/bitcoin.ico"
+WINDOWS_EXE_ICON_TESTNET_ICO="$SCRIPT_DIR/src/qt/res/icons/bitcoin_testnet.ico"
+WINDOWS_INSTALLER_ICON_ICO="$SCRIPT_DIR/share/pixmaps/bitcoin.ico"
 BDB_PACKAGE_MK="$SCRIPT_DIR/depends/packages/bdb.mk"
 BDB_CACHE_ROOT="$SCRIPT_DIR/.cache/bdb"
 NATIVE_LINUX_ALL_DEPS=()

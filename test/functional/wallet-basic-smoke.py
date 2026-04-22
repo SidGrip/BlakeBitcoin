@@ -71,7 +71,7 @@ class WalletBasicSmokeTest(BitcoinTestFramework):
             source.validateaddress(addresses["bech32"]),
             isscript=False,
             iswitness=True,
-            prefix="rblb1",
+            prefix="rbbtc1",
         )
 
         self.log.info("Phase 3: dumpprivkey and importprivkey")
@@ -118,7 +118,7 @@ class WalletBasicSmokeTest(BitcoinTestFramework):
             source.validateaddress(locked_bech32),
             isscript=False,
             iswitness=True,
-            prefix="rblb1",
+            prefix="rbbtc1",
         )
 
         source.walletpassphrase(passphrase, 2)
